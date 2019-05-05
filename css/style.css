@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	color: #797979;
+}
+
+a {
+	text-decoration: none;
+}
+
+#phone {
+	width: 100%;
+	margin: auto;
+	background-color: #fff;
+	height: 100vh;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+	position: relative;
+}
+
+/*End general*/
+
+header {
+	display: inline-block;
+	width: 100%;
+	height: 170px;
+}
+
+.head {
+	background-color: #ff6c00;
+	height: 60px;
+	display: flex;
+	text-align: center;
+}
+
+.head a {
+	color: #fff;
+}
+
+.fa-bell {
+	color: #fff;
+}
+
+.fa-bell, .fa-circle {
+	margin-right: 10px;
+}
+
+.subhead {
+	position: relative;
+	height: 90px;
+	margin-top: 15px;
+}
+
+.subhead>a {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.subhead img {
+	height: 100%;
+}
+
+.subhead .menu {
+	color: #d0d0d0;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	height: auto;
+	font-size: 35px;
+	opacity: 0.8;
+}
+
+/*End head*/
+
+main h1 {
+	font-size: 18px;
+}
+
+.task-card a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 5px 5px 25px;
+	position: relative;
+	margin-top: 15px;
+	border: 1px solid #cdcdcd;
+}
+
+.task-card a div p {
+	display: inline-block;
+}
+
+.btn-price {
+	background-color: #00b68a;
+	opacity: 0.7;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	padding: 13px;
+}
+
+/*End home*/
+
+.task-award a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 5px 5px 25px;
+	position: relative;
+	margin-top: 15px;
+	border: 1px solid #cdcdcd;
+}
+
+.task-award a div {
+	display: flex;
+	flex-grow: 1;
+	padding-right: 30px;
+}
+
+.task-award a > div {
+	flex-direction: column;
+	align-self: flex-start;
+	padding-top: 20px;
+}
+
+.task-award a .user-info p {
+	display: inline-block;
+	font-size: 1.1rem;
+}
+
+.user-info {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.user-info > p {
+	font-weight: 300;
+	font-style: italic;
+}
+
+.task-award img[alt='check'] {
+	max-height: 25px;
+	margin-right: 8px;
+}
+
+.task-award img[alt='award'] {
+	max-height: 150px;
+}
+
+.t-desc {
+	font-size: 1.1rem;
+}
+
+.btn-load {
+	width: 100%;
+	border: 1px solid #00b68a;
+	color: #00b68a;
+	display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+#news {
+	margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#news article {
+	position: relative;
+	display: inline-block;
+	margin: 25px 0 10px;
+	text-align: center;
+}
+
+#news article > div {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	bottom: 3px;
+    left: 0;
+    overflow: hidden;
+}
+
+#news article h1 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	z-index: 1;
+	padding: 15px;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+#news article h1:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #000;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+#news article img[alt='article'] {
+	width: 100%;
+	display: inline-block;
+}
+
+#news .aleft {
+	float: left;
+	width: 48%;
+}
+
+#news .aright {
+	float: right;
+	width: 48%;
+}
+
+/*End hall of fame*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #00b68a;
+	padding: 10px;
+	margin-top: 15px;
+	z-index: 999;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-around;
+    align-content: center; 
+}
+
+footer a {
+	display: inline-block;
+	text-align: center;
+}
+
+footer i, footer p {
+	color: #fff;
+}
+
+/*end footer*/
+
+@media only screen and (max-width: 480px) {
+	.subhead .menu {
+		top: 30px;
+	}
+
+	.task-award img[alt='award'] {
+		margin: 20px 0;
+   		padding-right: 20px;
+   		width: 100%;
+   		max-height: 100%;
+	}
+
+	.task-award a {
+		flex-direction: column;
+	}
+
+	.task-award a div {
+		padding-right: 20px;
+	}
+}
