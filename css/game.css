@@ -1,5 +1,5 @@
 h1{
-  margin: 0px;
+  margin: 0px !important;
   padding: 15px 0;
   font-size: 20px;
   color: #00b68a;
@@ -46,5 +46,5 @@ button:hover{
 }
 .quiz-container{
   position: relative;
-  height: 200px;
+  height: 210px;
 }
