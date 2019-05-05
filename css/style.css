@@ -9,7 +9,11 @@
 a {
 	text-decoration: none;
 }
-
+#map {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
 #phone {
 	width: 100%;
 	margin: auto;
