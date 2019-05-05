@@ -80,6 +80,7 @@ header {
 
 main h1 {
 	font-size: 18px;
+	margin-top: 15px;
 }
 
 .task-card a {
