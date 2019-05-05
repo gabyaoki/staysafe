@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<title>Stay Safe App</title>
+	<link rel="stylesheet" href="css/game.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -23,65 +24,15 @@
 		</header>
 
 		<main class="container">
-			<div class="task-award">
-				<a href="#">
-					<div>
-						<div class="user-info">
-							<div>
-								<img src="imgs/check.png" alt="check" />
-								<p>peter456</p>
-							</div>
-							<p>2h</p>
-						</div>
-						<p class="t-desc">Collect 02 trash bags</p>
-					</div>
-					<img src="imgs/hall1.jpg" alt="award" />
-				</a>
+			<h1>Disaster Preparedness Quiz</h1>
+			<div class="quiz-container">
+			  <div id="quiz"></div>
 			</div>
-
-			<div class="task-award">
-				<a href="#">
-					<div>
-						<div class="user-info">
-							<div>
-								<img src="imgs/check.png" alt="check" />
-								<p>peter456</p>
-							</div>
-							<p>2h</p>
-						</div>
-						<p class="t-desc">Collect 02 trash bags</p>
-					</div>
-					<img src="imgs/hall2.jpg" alt="award" />
-				</a>
-			</div>
-
-			<a href="#" class="btn-load">Load More</a>
+			<button id="previous">Previous Question</button>
+			<button id="next">Next Question</button>
+			<button id="submit">Submit Quiz</button>
+			<div id="results"></div>
 		</main>
-
-		<section id="news" class="container">
-			<div class="aleft">
-				<article>
-					<div>
-						<h1>Some header</h1>
-					</div>
-					<img src="imgs/fire1.jpg" alt="article" />
-				</article>
-
-				<article>
-					<div>
-						<h1>Some header</h1>
-					</div>
-					<img src="imgs/fire2.jpg" alt="article" />
-				</article>
-			</div>
-
-			<article class="aright">
-				<div>
-					<h1>Some header</h1>
-				</div>
-				<img src="imgs/fire3.jpg" alt="article" />
-			</article>
-		</section>
 
 		<footer>
 			<div class="container">
@@ -89,12 +40,10 @@
 					<i class="fas fa-gamepad"></i>
 					<p>Game</p>
 				</a>
-
 				<a href="halloffame.html">
 					<i class="fas fa-trophy"></i>
 					<p>Hall of Fame</p>
 				</a>
-
 				<a href="map.html">
 					<i class="fas fa-street-view"></i>
 					<p>Map</p>
@@ -102,5 +51,7 @@
 			</div>
 		</footer>
 	</div>
+
+<script  src="js/index.js"></script>
 </body>
 </html>
